@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subtitleist</title>
+	<link rel="stylesheet" href="/static/main.css" />
+</head>
+<body>
+  <h3>Files in directory: <%= directory %></h3>
+  <ul class="files">
+  	<% files.forEach(file => { %>
+  		<li>
+        <%= file.name %>
+        <ul>
+          <% file.links.forEach((link, i) => { %>
+            <li><%= link %></li>
+          <% }); %>
+        </ul>
+      </li>
+  	<% }); %>
+  </ul>
+  <form method="post" action="/download">
+    <button type="submit">Download</button>
+  </form>
+</body>
+</html>

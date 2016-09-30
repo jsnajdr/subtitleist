@@ -1,0 +1,18 @@
+{
+  "name": "subtitleist",
+  "version": "1.0.0",
+  "description": "Utility for downloading subtitle files",
+  "main": "cmd.js",
+  "author": "jsnajdr@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsnajdr/subtitleist.git"
+  },
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mz": "^2.4.0",
+    "subtitler": "^2.6.0"
+  }
+}
